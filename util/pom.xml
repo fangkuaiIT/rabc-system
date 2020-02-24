@@ -13,6 +13,9 @@
     <artifactId>util</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>common</module>
+    </modules>
 
 
     <name>util</name>

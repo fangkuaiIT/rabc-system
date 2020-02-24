@@ -21,3 +21,4 @@ SpringBoot+SpringDataJPA+Springsecurity+JWT+vue.js+elementUI
 -RABC权限系统后端--core模块搭建完成--2020/2/22
 -RABC权限系统后端--公共属性jpa封装jpa模块搭建完成-2020/2/22
 -RABC权限系统后端--util模块搭建完成-2020/2/22
+-RABC权限系统后端-util模块的common模块搭建完成-2020/2/22
