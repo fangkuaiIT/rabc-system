@@ -5,6 +5,7 @@
     <modules>
         <module>core</module>
         <module>jpa</module>
+        <module>util</module>
     </modules>
 
     <parent>
