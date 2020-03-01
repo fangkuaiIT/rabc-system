@@ -6,6 +6,7 @@
         <module>core</module>
         <module>jpa</module>
         <module>util</module>
+        <module>base</module>
     </modules>
 
     <parent>
@@ -37,6 +38,16 @@
 
     <!--添加依赖-->
     <dependencies>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <!--<version>5.1.37</version>-->
+            <version>8.0.13</version>
+            <scope>runtime</scope>
+        </dependency>
+
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -110,6 +121,15 @@
                 <plugin>
                     <artifactId>maven-project-info-reports-plugin</artifactId>
                     <version>3.0.0</version>
+                </plugin>
+                <plugin>
+                    <!--热部署配置-->
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <configuration>
+                        <!--fork:如果没有该项配置,整个devtools不会起作用-->
+                        <fork>true</fork>
+                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>

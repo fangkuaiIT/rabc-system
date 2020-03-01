@@ -55,10 +55,10 @@ public class JpaSearchCriteria extends BaseSearchCriteria {
         Sort sort;
 
         if (!Strings.isNullOrEmpty(getField()) && null != getOrder()){
-            sort = new Sort(Sort.Direction.fromString(getOrder().toString()), getField());
+            sort = Sort.by(Sort.Direction.fromString(getOrder().toString()), getField());
         }
         else {
-            sort = new Sort(Sort.Direction.DESC, "updateDate");
+            sort = Sort.by(Sort.Direction.DESC, "updateDate");
         }
 
         return sort;

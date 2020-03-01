@@ -1,0 +1,47 @@
+
+spring:
+
+  profiles:
+    active: test
+  devtools:
+    restart:
+      enabled: true
+    estart:
+      additional-paths: src/main/java
+
+
+  application:
+    name: AiJia
+
+  main:
+    allow-bean-definition-overriding: true
+
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: false
+      hibernate:
+        dialect: com.lin.mysql.MySQL55InnoDBDialectUtf8mb4
+        #dialect: org.hibernate.dialect.MySQL55Dialect
+        connection:
+          CharSet: utf8mb4
+
+
+  freemarker:
+    template-loader-path: classpath:/templates/
+    enabled: false
+    cache: false
+
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 50MB
+

@@ -36,7 +36,6 @@ public class GlobalExceptionHandler implements com.yyfly.common.exception.Global
             GlobalException e = (GlobalException) exception;
             return ResponseData.error(e.getCode(), e.getMessage());
         }
-
         if(exception instanceof BadCredentialsException ||exception instanceof UsernameNotFoundException){
             return ResponseData.error(403,"用户名或密码错误");
         }

@@ -236,10 +236,10 @@ public class SearchCriteria{
     public Sort buildSort(){
         Sort sort;
         if (StringUtils.isNoneEmpty(field) && StringUtils.isNoneEmpty(direction)) {
-            sort = new Sort(Sort.Direction.fromString(direction), field);
+            sort = Sort.by(Sort.Direction.fromString(direction), field);
         } else {
             //如果没传则默认使用 createDate 作为排序字段
-            sort = new Sort(Sort.Direction.DESC, "updateDate");
+            sort =  Sort.by(Sort.Direction.DESC, "updateDate");
         }
 
         return sort;

@@ -3,23 +3,23 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
+        <artifactId>base</artifactId>
         <groupId>com.lin</groupId>
-        <artifactId>rabc-system</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lin</groupId>
-    <artifactId>util</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>common</module>
-        <module>security</module>
-    </modules>
+    <artifactId>department</artifactId>
 
+    <name>部门</name>
+    <description>department</description>
 
-    <name>util</name>
-    <description>工具类</description>
-
+    <dependencies>
+        <dependency>
+            <groupId>com.lin</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>
