@@ -22,3 +22,13 @@ SpringBoot+SpringDataJPA+Springsecurity+JWT+vue.js+elementUI
 -RABC权限系统后端--公共属性jpa封装jpa模块搭建完成-2020/2/22
 -RABC权限系统后端--util模块搭建完成-2020/2/22
 -RABC权限系统后端-util模块的common模块搭建完成-2020/2/22
+
+##  使用说明
+---
+- 将sql文件下的sql导入数据库
+- 在主模块的server进行运行
+- 启动项目
+- 结合数据库的资源表，用户表，角色表，对应着看就明白什么角色有什么资源
+- 然后对应角色表(用户:admin,密码：123456或者用户:liming,密码：123456)
+- 对应着就能明白哪些用户有哪些角色然后用postman进行接口测试
+- 结合IDEA的断点测试，慢慢的结合着我的gitchat关于验证和鉴权的思路慢慢的看springsecurity是如何执行的了。
